@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Profile from "./components/profile";
+import LoginUser from "./components/login";
+import ChangeColor from "./components/ChangeColor";
+import UseState from "./useState/useState";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile />
+      <LoginUser />
+      <ChangeColor />
+      <UseState />
     </div>
   );
 }
