@@ -12,7 +12,6 @@ const reducer = (state, action) => {
   }
 };
 
-
 function ReducerTutorial() {
   const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
   return (
@@ -28,7 +27,14 @@ function ReducerTutorial() {
         </p>
         <p>Benefits</p>
         <h1>{state.count}</h1>
-        <button onClick={() => {dispatch({type: 'INCREMENT'}); dispatch({type: 'toggleShowText'})}}>Click Here</button>
+        <button
+          onClick={() => {
+            dispatch({ type: "INCREMENT" });
+            dispatch({ type: "toggleShowText" });
+          }}
+        >
+          Click Here
+        </button>
         {state.showText && <p>This is a text</p>}
       </div>
     </div>

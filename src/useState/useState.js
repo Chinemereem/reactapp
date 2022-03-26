@@ -7,9 +7,11 @@ function UseState() {
   return (
     <div className="App">
       <div>
-
         <h1>UseState Hook</h1>
-        <p>useState is a Hook that allows you to have state variables in functional components.</p>
+        <p>
+          useState is a Hook that allows you to have state variables in
+          functional components.
+        </p>
         <h1>{count}</h1>
         <button
           onClick={() => {
@@ -26,8 +28,9 @@ function UseState() {
             setDCount(Dcount - 1);
           }}
         >
-         Decrement
-        </button></div>
+          Decrement
+        </button>
+      </div>
       <h1>{inputName}</h1>
       <input
         type="text"
