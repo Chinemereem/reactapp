@@ -4,6 +4,7 @@ import LoginUser from "./components/login";
 import ChangeColor from "./components/ChangeColor";
 import UseState from "./useState/useState";
 import ReducerTutorial from './UseReducer/UseReducer';
+import EffectTutorial from "./useEffect/EffectTutorial";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <UseState />
       <ReducerTutorial />
       <ReducerTutorial />
+      <EffectTutorial />
     </div>
   );
 }
